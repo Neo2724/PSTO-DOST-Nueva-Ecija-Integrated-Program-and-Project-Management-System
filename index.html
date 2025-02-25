@@ -1,0 +1,90 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOST Nueva Ecija</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/LOGO-y0boX59RDG1sN7oKPHZhAQKiZDQz6n.png" alt="DOST Logo" class="logo">
+            <div class="header-text">
+                <h1>DOST Nueva Ecija</h1>
+                <h4>Provincial Science and Technology Office</h4>
+                <h3>Fine Management System</h3>
+            </div>
+            <div class="signup-container">
+                <button id="signupButton">Sign Up</button>
+            </div>
+            
+        </header>
+
+        <main>
+            <div class="choices">
+                <div class="choice-card">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/CEST-yKB8MK7XxhefbauyLAPUydqYeZ5IL9.png" alt="CEST Logo">
+                    <h4>CEST</h4>
+                    
+                    <button onclick="showLoginModal('cest')">Enter</button>
+                </div>
+                <div class="choice-card">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/GIA-O6U2qOGovmvy9WCLdnuYarwp7YY5GD.png" alt="GIA Logo">
+                    <h4>GIA</h4>
+                    <button onclick="showLoginModal('gia')">Enter</button>
+                </div>
+                <div class="choice-card">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SETUP_4.0-xvNFWy4q6P2UtuitnWvoWcY5WNFrff.png" alt="SETUP Logo">
+                    <h4>SETUP</h4>
+                    <button onclick="showLoginModal('setup')">Enter</button>
+                </div>
+            </div>
+        </main>
+
+
+
+        <!-- Login Modal -->
+        <div id="loginModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <input type="password" id="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeSignup">&times;</span>
+        <h2>Create an Account</h2>
+        <form id="signupForm">
+            <input type="text" id="signupUsername" placeholder="Username" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <select id="signupProgram" required>
+                <option value="">Select Program</option>
+                <option value="cest">CEST</option>
+                <option value="gia">GIA</option>
+                <option value="setup">SETUP</option>
+            </select>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+    
+    <script src="script.js">
+
+    </script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>

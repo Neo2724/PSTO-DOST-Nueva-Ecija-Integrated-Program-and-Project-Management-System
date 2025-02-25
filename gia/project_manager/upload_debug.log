@@ -1,0 +1,21 @@
+DEBUG LOG:
+Request Method: POST
+FILES: Array
+(
+    [file] => Array
+        (
+            [name] => now guide me again from the start..txt
+            [full_path] => now guide me again from the start..txt
+            [type] => text/plain
+            [tmp_name] => C:\xampp\tmp\phpD877.tmp
+            [error] => 0
+            [size] => 1257
+        )
+
+)
+
+POST: Array
+(
+    [projectId] => 7
+)
+
