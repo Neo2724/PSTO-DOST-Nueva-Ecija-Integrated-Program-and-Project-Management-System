@@ -67,8 +67,8 @@ The **Integrated Program and Project Management System** is a centralized, web-b
 /reports
 /config
 index.php
-
-👨‍💻 Developed By
+```
+## 👨‍💻 Developed By
 James Neo Culala
 Built using PHP, MySQL, JavaScript, Bootstrap
 Hosted on XAMPP, tracked via GitHub
